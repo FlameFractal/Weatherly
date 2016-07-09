@@ -1,0 +1,39 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+.container-fluid{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#brand{
+	font-size: 1.5em;
+	color: blue;
+}
+.margin-top{
+	margin-top: 13vh !important;
+}
+form{
+	padding-top: 3vh;
+}
+.alert{
+	display: none;
+	font-size: 1.1em;
+}
+#title{
+	font-size: 1.5em;
+}
+.thumb{
+	position: absolute;
+	margin-top: -35px;
+	height: 4em;
+}
+@media screen and (min-width: 768px){
+    .next-line {display: none;}
+ }
+ @media screen and (min-width: 1024px) and (max-width: 1080px){
+    .next-line {display: none;}
+ }
