@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weatherly, the weather app.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+
+	<div class="container-fluid">
+		<div class="row margin-top">
+			<div class="col-md-6  col-md-offset-3 text-center">
+				<h1 id="heading"><strong id="brand">Weatherly</strong>,<br class="next-line"> the weather app.</h1>
+				<p class="lead">Find weather forecast by city name.</p>
+				<form>
+					<div class="form-group">
+						<input type="text" name="city" id="city-input" class="form-control" placeholder="For eg. New Delhi, London, San Francisco...">
+					</div>
+					<div class="form-group">
+						<button type="button" class="btn btn-success btn-lg" id="forecast-btn">Show forecast!</button>
+					</div>
+				</form>
+				
+				<!-- <div id="success" class="alert alert-success">
+					<div class="container">
+						<div class="row">
+							<div col-sm-4>
+								<span id="city"></span>
+							</div>
+							<div col-sm-4>
+								<span id="current-temp"></span>
+							</div>
+							<div col-sm-4>
+								Tomorrow's forecast: <br> <span id="tomorrows-forecast"></span>
+							</div>
+						</div>
+						<div class="row">
+							<div col-sm-4>
+								<span id="currently"></span>
+							</div>
+							<div col-sm-4>
+								<span id="humidity"></span>
+							</div>
+							<div col-sm-4>
+								<span id="tomorrows-thumbnail"></span>
+							</div>
+						</div>
+						<div class="row">
+							<div col-sm-4>
+								<span id="todays-thumbnail"></span>
+							</div>
+							<div col-sm-4>
+								<span id="today-high"></span>
+								<br>
+								<span id="today-low"></span>
+							</div>
+							<div col-sm-4>
+								<span id="tomorrows-high"></span>
+								<br>
+								<span id="tomorrows-low"></span>
+							</div>
+						</div>
+					</div>
+				</div> -->
+ 
+				<div id="success" class="alert alert-info">
+					<div id="container-fluid" style="font-size: 1.5em;">
+								<p><strong><span id="title"></span></strong></p>
+								<p><strong>Right Now:       </strong>  <span id="current-temp"></span> ,    <span id="currently"></span>  <img src="" id="todays-thumbnail" class="thumb"></p>
+								<p><strong>Tomorrow:        </strong>  <span id="tomorrows-forecast"></span>  <img src="" id="tomorrows-thumbnail" class="thumb"></p>
+					</div>	
+				</div>
+
+
+ 			<div id="fail" class="alert alert-danger">Could not find weather data for that city. Please try again.</div>
+			<div id="noCity" class="alert alert-danger">Oops! You did not enter a city.</div>
+		</div>		
+	</div>
+
+
+	<script src="//code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqsms1yVqOtnepnHVP9aJ7sm" crossorigin="anonymous"></script>
+	<script src="js/jquery.simpleWeather.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&dummy=.js"></script>
+	<script src="js/weather.js"></script>	
+</body>
+</html>
